@@ -129,7 +129,7 @@ namespace Cached_Leads_for_Call_Center
                 Console.WriteLine("Error: {0}", e);
 
                 string body = "<!DOCTYPE html><html><body><div><p>The Cached Leads for Call Center process failed.\n" + e + "</p></div></body></html>";
-                SmtpClient smtp_server = new SmtpClient("SMTPCLIENT);
+                SmtpClient smtp_server = new SmtpClient("SMTPCLIENT");
                 MailMessage email = new MailMessage();
                 email.From = new MailAddress("FROM");
                 email.To.Add("TO");
